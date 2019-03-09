@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChiangmaiXamarin.Tab2Page"
+             Title="Page 2"
+             Icon="tab2">
+    
+    <WebView Source="https://youtube.com"/>
+    
+</ContentPage>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChiangmaiXamarin"
+             x:Class="ChiangmaiXamarin.MainPage"
+             Title="Main Page">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New"
+                     x:Name="refreshButton"/>
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout Padding="30">
+        
+        <Label Text="Hello World"
+               x:Name="myLabel"/>
+        
+        <Entry Placeholder="Input text here"
+               x:Name="myEntry"/>
+        
+        <Button Text="OK"
+                x:Name="myButton"
+                BackgroundColor="Silver"/>
+        
+        <ListView x:Name="myListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <Image Source="https://www.thewrap.com/wp-content/uploads/2015/11/Donald-Trump.jpg"/>
+                            
+                            <Label Text="{Binding Path=Name}"
+                                   Grid.Column="1"/>
+                            
+                        </Grid>  
+                        
+                    </ViewCell>
+                        
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </StackLayout>
+</ContentPage>
